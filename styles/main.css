@@ -1,14 +1,20 @@
 .background-body {
     background-image: url("../img/bg.webp");
-    background-attachment: fixed;
+    background-attachment: cover;
+    
 }
 
-.background-block {
+.card {
     background-color: white;
-    margin: 10em 2em 4em 6em;
-    width: 40%;
+    margin: 1em;
+    margin-top: 6em;
+
+    min-width: 20em;
+    height: 18em;
     border-radius: 2px solid black;
     box-shadow: .25rem .25rem .5rem .3rem #888888;
+    display: block;
+    
     
 
 
@@ -16,32 +22,60 @@
 
 
 .img-responsive {
-    width: 30%;
+    width: 100%;
     height: auto;
-    border: 2px solid white;
-    border-radius: 50%;
-    margin-left: 17em;
-    margin-top: -10em;
-    overflow: hidden;
     
-
 
 }
 
+.img-div{
+    width: 12em;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-left: 4em;
+    margin-top: -6em;
+    overflow: hidden; 
+    position: center top;
+    aspect-ratio: 1/1;
+}
 
-.nadpis {
+
+.card-headline {
     padding-left: 1em;
     font-weight: bold;
     font-size: 1.2em;
-    padding-bottom: .5em;
-    border-bottom: 1px solid black;
+
+    overflow: auto;
     
 }
 
-.popis {
+.card-text {
     padding-left: 1em;
+    overflow: auto;
+}
+.card-line {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: -.5em;
+    border-bottom: 1px solid black;
 }
 
-.box {
+.content-wrapper {
     display: flex;
+    overflow-x: auto;
+
+    margin: 0 auto;
 }
+/*
+@media (min-width: 960px)
+{
+    .box {
+        display: flex;
+    }
+    
+  
+}
+*/
+
+
